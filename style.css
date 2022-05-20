@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* .page-wrap{ 
+    transition: 0.3s all ease-in-out;
+    background: rgb(85, 11, 11);
+    content: "";
+    position: absolute;
+    z-index: 1104;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.off-view .page-wrap{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1104 ;
+    overflow: hidden;
+}
+.off-view .page-wrap:before{
+    opacity: 0.5;
+    visibility: visible;
+} */
+
+.container .navbar-brand span{
+    color: rgb(85, 11, 11);
+}
+.container .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+} 
+.mobile-view{
+    width: 300px;
+    position: fixed;
+    right: 0;
+    z-index: 2000;
+    padding-top: 20px;
+    background: white;
+    height: calc(100vh);
+    transform: translateX(110%);
+    box-shadow: -10px 0 20px -10px rgb(85, 11, 11);
+    transition: 0.3s all ease-in-out;
+}
+.off-view .mobile-view{
+    transform: translateX(0%);
+}
+/* .mobile-view .mobile-view-header { 
+    width: 100%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.mobile-view .mobile-view-header .mobile-view-close{
+    float: right;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+.mobile-view .mobile-view-header .mobile-view-close{
+    font-size: 30px;
+    display: inline-block;
+    padding-right: 10px;
+    line-height: 1;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.mobile-view .mobile-view-body {
+    overflow: scroll;
+    position: relative;
+    padding: 20px;
+    height: calc(100vh - 52px);
+    padding-bottom: 150px;
+    padding-top: 50px;
+
+}
+.mobile-view .close-view{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+.mobile-view .close-view a {
+    padding: 10px 20px;
+    display: block;
+    position: relative;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}*/
+
+.home {
+    display: flex;
+    background: url("assets/images/art4.jpg") no-repeat center;
+    height: 100vh;
+    color:#fff;
+    min-height: 400px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 25px;
+   
+}
+.home .home-content .text-2 span {
+    color: wheat;
+}
+.home .home-content .text-2{
+    font-size: 73px;
+    font-weight: 600;
+    margin-left: -3px;
+}    
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+} 
+.home .home-content .text-3 span{
+    color: rgb(85, 11, 11);
+    font-weight: 500;
+}
+.about, .services, .portfolio{
+    font-family: 'Poppins', sans-serif;
+}
+section {
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+} 
+.reviews{
+    font-family: 'Poppins', sans-serif;
+}
+
+.reviews .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.reviews .title::before{
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: rgb(85, 11, 11);
+    transform: translateX(-50%);
+} 
+.reviews .carousel .card{
+    background: #222;
+    border-radius: 9px;
+    padding: 25px 35px;
+}
+
+.reviews .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(85, 11, 11);
+}
+
+.reviews .carousel .card:hover img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+    justify-content: space-between;
+}       
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;  
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: rgb(85, 11, 11);
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+
+.services .serv-content, .reviews .carousel {
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+    justify-content: space-between;
+} 
+            
+
+section {
+    padding: 100px 0;
+}
+.services{
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: whitesmoke;
+}
+.services .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.services .title::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 190px;
+    height: 3px;
+    background: rgb(85, 11, 11);
+    transform: translateX(-50%);
+} 
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: rgb(85, 11, 11);
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box{
+     transform: scale(1.05);
+}
+
+.reviews .carousel .card{
+    width: calc(33% - 20px);
+    background: #222;
+    color: white;
+    text-align: center;
+    border-radius: 20%;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.reviews .carousel .card:hover{
+    background: rgb(85, 11, 11);
+    
+
+}
+.reviews .carousel .card .box{
+    transition: all 0.3s ease;
+}
+
+.reviews .carousel .card:hover .box{
+     transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: rgb(85, 11, 11);
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: white;
+}
+
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+section {
+    padding: 100px 0;
+}
+.portfolio{
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: whitesmoke;
+}
+.portfolio .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.portfolio .title::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 190px;
+    height: 3px;
+    background: rgb(85, 11, 11);
+    transform: translateX(-50%);
+} 
+.portfolio .portfolio-content .left .text{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+.portfolio .portfolio-content .right video{
+    margin-right: 50% ;
+}
+.contact .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 190px;
+    height: 3px;
+    background: rgb(85, 11, 11);
+    transform: translateX(-50%);
+} 
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: left;
+     
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .rows{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .rows .info{
+    margin-left: 30px;
+}
+.contact .contact-content .rows i{
+    font-size: 20px;
+    color: rgb(85, 11, 11);
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .field input, .contact .right form .textarea textarea{
+    height: 100%;
+    width: 80%;
+    border: 1px solid lightslategrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 46px;
+    width: 160px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(85, 11, 11);
+    background: rgb(85, 11, 11);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: rgb(85, 11, 11);
+    background: none;
+
+
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    
+}
+footer span a{
+    color: rgb(85, 11, 11);
+}
+@media (max-width:1124px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+          
+    }
+    .services .serv-content .card, .reviews .carousel .card {
+        width: 95%;
+        margin-bottom: 30px;
+        
+    }
+    .reviews .carousel .card{
+        width: 75%;
+        margin-bottom: 30px;
+    }
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+}
+@media (max-width:970px){
+    
+    .max-width {
+        padding: 0 50px;
+}
+
+
+.menu-btn{
+    display: block;
+    z-index: 991;
+    padding-left:500px ;
+}
+.menu-btn i.active:before{
+    content: "\f00d";
+}
+.navbar .menu {
+    position: fixed;
+    height: 60vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 46px;
+    transition: all 0.3s ease;
+}
+.navbar .menu.active{
+    left: 0;
+}
+.navbar .menu li{
+    display: block;
+}
+.navbar .menu li a{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 15px;
+}
+.navbar .menu li a:hover{
+    color:rgb(85, 11, 11);
+    cursor: pointer;
+}
+.home .home-content .text-2{
+    font-size: 60px;
+}    
+.home .home-content .text-3{
+    font-size: 30px
+} 
+.about .about-content .right{
+    flex: 100%;
+}
+.about .about-content .column{
+    width: 50%;
+}
+;.services .serv-content .card, .reviews .carousel .card{
+    width: calc(50% - 10%);
+    margin-bottom: 20px;
+}
+}
+
+
+
+
+
+
+
